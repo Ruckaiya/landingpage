@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>School</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+  <link href="index4.css" type="text/css" rel="Stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
+  <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="images/logosample2.png" alt="">
+    </div>
+
+    <section id="hero">
+        <header class="navigation">
+            <div class="flex nav-container">
+                <!-- <a id="logo" href="#">SATBARIA HIGH SCHOOL.</a> -->
+                <nav id="nav-list">
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
+
+                    <ul id="nav-menu">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="http://www.google.com" target="_blank">About</a></li>
+                        <li><a href="#"></a>Admission</li>
+                        <li><a href="#">Campus</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
+
+                        <li><a href="#">Contact</a></li>
+                        <li id="close-flyout"><span class="fas fa-times"></span></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+                
+                        
+                    
+                                <div id="hero-slider">
+                                        <div class="hero-slide-item" style="background-image:url('images/s1.jpg');">
+                                          <div class="hero-slider-marketing">
+                                            <a href="#" class="youtube-button"><span class="fa fa-play"></span></a>
+                                            <h2>School's Motto In Here</h2>
+                                            <button>More Info</button>
+                                          </div>
+                                        </div>
+                                  
+                                        <div class="hero-slide-item" style="background-image:url('images/s2.jpg');">
+                                          <div class="hero-slider-marketing">
+                                            <a href="#" class="youtube-button"><span class="fa fa-play"></span></a>
+                                            <h2>Lorem ipsum dolor sit</h2>
+                                            <button>More Info</button>
+                                          </div>
+                                        </div>
+                                  
+                                        <div class="hero-slide-item" style="background-image:url('images/s1.jpg');">
+                                          <div class="hero-slider-marketing">
+                                            <a href="#" class="youtube-button"><span class="fa fa-play"></span></a>
+                                            <h2>Lorem ipsum dolor sit</h2>
+                                            <button>More Info</button>
+                                          </div>
+                                        </div>
+                                  
+                                        <div class="hero-slide-item" style="background-image:url('images/s3.jpg');">
+                                          <div class="hero-slider-marketing">
+                                            <a href="#" class="youtube-button"><span class="fa fa-play"></span></a>
+                                            <h2>Some Text.</h2>
+                                            <button>More Info</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                      </section>
+                      
+            <div id="video-frame">
+                <span id="video-frame-hide" class="fa fa-times"></span>
+                <div class="video-frame-container">
+                  <div class="video-frame-scaler">
+                      <iframe id="embed-video" src="https://www.youtube.com/embed/WCBEammPsu0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            <div id="main">
+                </div>
+<script>
+$(document).ready(function () {
+  var $nav = $('.navigation'),
+      posTop = $nav.position().top;
+  $(window).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y >= posTop) { $nav.css({'position':'fixed','text-align':'center','top':'0', 'margin':'0', 'padding':'','width':'100%'}); }
+    else { $nav.css('position','relative'); }
+  });
+
+  $(function () {
+      // store jquery references to elements in const variables
+      const headerNav = $('main nav');
+      const hamburgerMenu = $('#hamburger-menu');
+      const search = $('#search');
+      const searchContainerHide = $('#search-container-hide');
+      const searchContainer = $('#search-container');
+      const youtubeButton = $('.youtube-button');
+      const videoFrame = $('#video-frame');
+      const videoFrameHide = $('#video-frame-hide');
+      const embedVideo = $('#embed-video');
+
+      // initialize hero slider
+      $('#hero-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        fade: true,
+        speed: 1000,
+        cssEase: 'linear'
+      });
+
+      $('#trainers-slider').slick({
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
+        nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              arrows: false
+            }
+          },
+          {
+            breakpoint: 530,
+            settings: {
+              slidesToShow: 1,
+              arrows: false
+            }
+          }
+        ]
+      });
+
+      // initialize event handling
+      hamburgerMenu.on('click', () => {
+        headerNav.toggle();
+      });
+
+      search.on('click', () => {
+        searchContainer.css({
+          'opacity': '1',
+          'visibility': 'visible',
+          'z-index': '100'
+        });
+      });
+
+      searchContainerHide.on('click', () => {
+        searchContainer.css({
+          'opacity': '0',
+          'visibility': 'hidden',
+          'z-index': '0'
+        });
+      });
+
+      youtubeButton.on('click', () => {
+        videoFrame.css({
+          'opacity': '1',
+          'visibility': 'visible',
+          'z-index': '100'
+        });
+      });
+
+      videoFrameHide.on('click', () => {
+        videoFrame.css({
+          'opacity': '0',
+          'visibility': 'hidden',
+          'z-index': '0'
+        });
+        
+        embedVideo.prop('src', embedVideo.prop('src'));
+      });
+    });
+});
+</script>
+<script src="main2.js"></script>
+</body>
+</html>
